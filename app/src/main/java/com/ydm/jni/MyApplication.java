@@ -2,6 +2,8 @@ package com.ydm.jni;
 
 import android.app.Application;
 
+import com.ydm.jni.util.LogUtils;
+
 /**
  * Description:
  * Data：2018/12/24-16:05
@@ -20,5 +22,7 @@ public class MyApplication extends Application {
         super.onCreate();
 
         instance = this;
+
+        LogUtils.init(true);
     }
 }
