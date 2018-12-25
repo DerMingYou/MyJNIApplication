@@ -3,4 +3,14 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="normal_black_1">#333333</color>
+    <color name="normal_black_2">#666666</color>
+    <color name="normal_black_3">#999999</color>
+    <color name="normal_black_c">#CCCCCC</color>
+    <color name="normal_black_f4">#f4f4f4</color>
+    <color name="normal_black_d">#dddddd</color>
+    <color name="normal_black_e">#eeeeee</color>
+    <color name="weak_color_light">#F8F8F8</color>
+    <color name="weak_color_dark">#CDCED3</color>
 </resources>

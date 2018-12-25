@@ -50,4 +50,10 @@ public abstract class BaseActivity extends AppCompatActivity {
         setContentView(mContentView = LayoutInflater.from(this).inflate(layoutId, null));
         mUnbinder = ButterKnife.bind(this);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mUnbinder.unbind();
+    }
 }

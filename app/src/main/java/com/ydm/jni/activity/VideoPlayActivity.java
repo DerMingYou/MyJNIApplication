@@ -3,6 +3,7 @@ package com.ydm.jni.activity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.ydm.jni.R;
 import com.ydm.jni.base.BaseActivity;
 
 /**
@@ -15,7 +16,7 @@ public class VideoPlayActivity extends BaseActivity {
 
     @Override
     public int bindLayout() {
-        return 0;
+        return R.layout.activity_video_play;
     }
 
     @Override

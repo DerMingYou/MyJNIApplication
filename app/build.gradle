@@ -10,10 +10,17 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild
 
         ndk {
-//            moduleName "sample_ndk"  //模块名， 生成so文件会对应名称
-            abiFilters "armeabi", "armeabi-v7a"  //abiFilters决定的是生成so库的种类
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a"  //abiFilters决定的是生成so库的种类
+        }
+
+        //AndroidStudio3.0 Canary 8的时候，发现之前项目的butter knife报错 添加如下配置就OK了
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
         }
     }
 
