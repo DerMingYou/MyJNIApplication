@@ -9,8 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
 
 /**
  * Description：
@@ -23,7 +21,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public Activity mContext;
 
     protected View mContentView;
-    private Unbinder mUnbinder;
+//    private Unbinder mUnbinder;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -48,12 +46,12 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void setBaseView(@LayoutRes int layoutId) {
         if (layoutId <= 0) return;
         setContentView(mContentView = LayoutInflater.from(this).inflate(layoutId, null));
-        mUnbinder = ButterKnife.bind(this);
+//        mUnbinder = ButterKnife.bind(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mUnbinder.unbind();
+//        mUnbinder.unbind();
     }
 }
