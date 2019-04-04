@@ -5,7 +5,6 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.google.common.net.MediaType;
 
 import java.net.Inet4Address;
 import java.net.InetAddress;
